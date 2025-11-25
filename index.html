@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIWELWI — Музыкальный Портал</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Установим шрифт Inter */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212; /* Темный фон */
+            color: #E0E0E0; /* Светлый текст */
+        }
+        /* Стиль для тонких разделительных линий */
+        .divider {
+            height: 1px;
+            background-color: #3f3f46; /* Серый цвет */
+            border: none;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="bg-gray-800 p-8 md:p-12 rounded-2xl shadow-2xl w-full max-w-lg text-center border-t-4 border-purple-500">
+        <!-- SVG иконка для музыкального портала -->
+        <svg class="w-16 h-16 mx-auto mb-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v14m-6 3h6a2 2 0 002-2v-4a2 2 0 00-2-2H9v7z"></path>
+        </svg>
+        <h1 class="text-3xl font-extrabold mb-3 text-white tracking-tight">
+            WIWELWI МУЗЫКАЛЬНЫЙ ПОРТАЛ
+        </h1>
+        <hr class="divider mb-4"> <!-- Первая черточка -->
+        <p class="text-gray-400 mb-8">
+            Страница успешно опубликована. Спасибо за терпение!
+        </p>
+        <hr class="divider mb-8"> <!-- Вторая черточка перед кнопками -->
+        <div class="space-y-4">
+            <!-- Кнопка "Начать слушать" -->
+            <a href="#" class="block w-full px-6 py-3 bg-purple-600 hover:bg-purple-700 transition duration-300 text-white font-semibold rounded-lg shadow-md transform hover:scale-[1.02] active:scale-[0.98]">
+                Начать слушать
+            </a>
+            <!-- Кнопка "Исходный код" -->
+            <a href="https://github.com/wiwelwi/music-portal" target="_blank" class="block w-full px-6 py-3 bg-gray-600 hover:bg-gray-700 transition duration-300 text-gray-200 font-semibold rounded-lg shadow-md transform hover:scale-[1.02] active:scale-[0.98]">
+                Посмотреть исходный код (GitHub)
+            </a>
+        </div>
+    </div>
+</body>
+</html>
